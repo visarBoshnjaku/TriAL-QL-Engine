@@ -6,16 +6,19 @@ There are two possibilities of TriAL-QL Engine execution:
 2. Spark Engine - AppSpark.java class
 
 1. When using the Impala Execution:
-Use class AppImpala.java from executor module, with 2 inline arguments. First argument can be a TriAL-QL query, or a flag "-f" which tells that we are giving 
+Use class AppImpala.java from executor module, with 2 inline arguments. First argument can be a TriAL-QL query, or a flag "-f" which
+tells that we are giving 
 a file path. If the second case, the file with the TriAL-QL queries resides in path which is given as the second inline argument.
 
 2. When using the Spark Execution:
-Use class AppSpark.java from executor module with 3 inline arguments. First argument can be a TriAL-QL query, or a flag "-f" which tells that we are giving 
+Use class AppSpark.java from executor module with 3 inline arguments. First argument can be a TriAL-QL query, or a flag "-f" which tells
+that we are giving 
 a file path. If the second case, the file with the TriAL-QL queries resides in path which is given as the second inline argument. The
 third  inline argument is a shuffle.partition number, which is used as a configuration to JavaSparkContext.
 
 
-In addition, one can use configuration class which resides in data.structures module named Configuration.class. The configuration parameters 
+In addition, one can use configuration class which resides in data.structures module named Configuration.class. The configuration
+parameters 
 that can be used include:
 
 	1. initialTableName - Initial table name (only for Spark)
@@ -30,7 +33,8 @@ that can be used include:
 	
 	6. Heuristics* = false; - Use Heuristic Naive algorithm for recursive queries.
 	
-	7. compositionalConnectivity = false; - Use Compositional Semi-naive algorithm for Connectivity Pattern, if false use the default
+	7. compositionalConnectivity = false; - Use Compositional Semi-naive algorithm for Connectivity Pattern, if false use the
+	default
 		non-compositional algorithm.
 		
 	8. longChainRecursion = false; - Only for Spark execution with Semi-Naive or Scalable Smart recursive queries, to be used	
@@ -38,7 +42,8 @@ that can be used include:
 		
 	9. saveToFiles = false; - Save the final results to local file system.
 	
-	10. impalaConnUrl*** - This settings is found in class ImpalaDaemon.java. Here we set the connection URL to Impala Master. (only for Impala) 
+	10. impalaConnUrl*** - This settings is found in class ImpalaDaemon.java. Here we set the connection URL to Impala Master. (only
+	for Impala) 
 	
 *   Only one of configuration 4, 5, 6 should be on at the same time for recursive queries
 **  Composite mode works only for non-recursive queries
