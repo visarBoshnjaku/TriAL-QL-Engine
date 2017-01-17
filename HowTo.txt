@@ -45,7 +45,9 @@ that can be used include:
 	10. impalaConnUrl*** - This settings is found in class ImpalaDaemon.java. Here we set the connection URL to Impala Master. (only
 	for Impala) 
 	
+	
 *   Only one of configuration 4, 5, 6 should be on at the same time for recursive queries
 **  Composite mode works only for non-recursive queries
 *** This configuration resides in module executor, class ImpalaDaemon.java
 
+--- NOTE: In order to run the code one should also include atlr4-runtime binary version 4.5
