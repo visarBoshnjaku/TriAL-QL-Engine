@@ -1,5 +1,5 @@
 This document will explain how to use TriAL-QL engine which was developed by Visar Boshnjaku as part of the Master Thesis: 
-"A Scalable Engine for TriAL-Ql on SQL-on-Hadoop"
+"A Scalable Engine for TriAL-Ql on SQL-on-Hadoop" - University of Freiburg 2016 SS
 
 There are two possibilities of TriAL-QL Engine execution:
 1. Impala Engine - AppImpala.java class
